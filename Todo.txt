@@ -1,0 +1,4 @@
+
+1. Onion Architecture  == Done.
+2. Database + Migration == Done.
+3. Repository Design Pattern == ?
