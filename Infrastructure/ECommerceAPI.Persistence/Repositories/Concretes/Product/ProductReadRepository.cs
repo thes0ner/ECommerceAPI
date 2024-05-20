@@ -1,5 +1,4 @@
 ﻿using ECommerceAPI.Application.Repositories;
-using ECommerceAPI.Application.Repositories.Products;
 using ECommerceAPI.Domain.Entities;
 using ECommerceAPI.Persistence.Contexts;
 using System;
