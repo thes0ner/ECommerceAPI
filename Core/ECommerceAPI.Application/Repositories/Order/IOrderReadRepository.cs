@@ -5,10 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ECommerceAPI.Application.Repositories.Products
+namespace ECommerceAPI.Application.Repositories
 {
-    public interface IProductWriteRepository : IWriteRepository<Product>
+    public interface IOrderReadRepository : IReadRepository<Order>
     {
-
     }
 }

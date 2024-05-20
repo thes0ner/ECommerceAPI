@@ -1,4 +1,4 @@
-﻿using ECommerceAPI.Application.Repositories.Customers;
+﻿using ECommerceAPI.Application.Repositories;
 using ECommerceAPI.Domain.Entities;
 using ECommerceAPI.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
@@ -9,7 +9,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ECommerceAPI.Persistence.Repositories.Concretes.Customers
+namespace ECommerceAPI.Persistence.Repositories.Concretes
 {
     public class CustomerReadRepository : ReadRepository<Customer>, ICustomerReadRepository
     {

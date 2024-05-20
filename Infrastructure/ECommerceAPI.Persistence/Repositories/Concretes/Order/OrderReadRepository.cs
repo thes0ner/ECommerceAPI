@@ -1,4 +1,4 @@
-﻿using ECommerceAPI.Application.Repositories.Orders;
+﻿using ECommerceAPI.Application.Repositories;
 using ECommerceAPI.Domain.Entities;
 using ECommerceAPI.Persistence.Contexts;
 using System;
@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 
 namespace ECommerceAPI.Persistence.Repositories.Concretes.Orders
 {
-    public class OrderWriteRepository : WriteRepository<Order>, IOrderWriteRepository
+    public class OrderReadRepository : ReadRepository<Order>, IOrderReadRepository
     {
-        public OrderWriteRepository(ECommerceAPIDbContext context) : base(context)
+        public OrderReadRepository(ECommerceAPIDbContext context) : base(context)
         {
+
         }
     }
 }

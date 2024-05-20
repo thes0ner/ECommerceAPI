@@ -1,4 +1,4 @@
-﻿using ECommerceAPI.Application.Repositories.Products;
+﻿using ECommerceAPI.Application.Repositories;
 using ECommerceAPI.Domain.Entities;
 using ECommerceAPI.Persistence.Contexts;
 using System;
@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace ECommerceAPI.Persistence.Repositories.Concretes.Products
 {
-    public class ProductReadRepository : ReadRepository<Product>, IProductReadRepository
+    public class ProductWriteRepository : WriteRepository<Product>, IProductWriteRepository
     {
-        public ProductReadRepository(ECommerceAPIDbContext context) : base(context)
+        public ProductWriteRepository(ECommerceAPIDbContext context) : base(context)
         {
         }
     }
